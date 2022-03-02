@@ -4,6 +4,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+:root{
+    --primary-color: #f97316;
+}
+
 
 .container{
     padding-left: 1rem;
@@ -13,4 +17,61 @@ body{
 .container-center{
     max-width: 600px;
     margin: auto;
+}
+
+
+.primary-link{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.secondary-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.list-non-bullet{
+    display: inline;
+    padding: 0rem 0.5rem;;
+}
+
+.list-reverse-ordered{
+    list-style: as;
+}
+
+.navigation{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+.navigation a {
+    color: white;
+}
+
+.navigation .nav-pills{
+    text-align: right;
+}
+
+.navigation .navBrand{
+    font-weight: bold;
+    color: white;
+}
+
+.navigation .link-active{
+    font-weight: bold;
 }
