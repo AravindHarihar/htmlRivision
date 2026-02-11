@@ -4,120 +4,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>COmponent Library HTML Rivision</title>
+    <title>BuildCraft India | Modern Construction Solutions</title>
 </head>
 <body>
-    <h1>Aravind's Component Library</h1>
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <nav class="navbar container">
+            <a href="#home" class="brand">BuildCraft India</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary nav-cta">Start Project</a>
+        </nav>
 
-    <p>This is a <strong>component</strong> library that wil make it easier for us to create different components easily for all future websites</p>
-
-    <hr>
-
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <h3>This is the third biggest heading</h3>
-    <p>This is a paragraph</p>
-    <small>This is a small text</small>
-
-    <hr>
-
-    <h1>Fluid container</h1>
-    <div class="container">This is a fluid container, that goes from end to end</div>
-
-    <h1>Centered container</h1>
-    <div class="container container-center">This is a centered container and has specific width and will be in the center.</div>
-
-    <hr>
-
-    <h1>@Links</h1>
-
-    <a class="primary-link link" href="/"> Primary Link</a>
-    <a class="link secondary-link" href="/"> Secondary Link</a>
-
-    <hr>
-
-    <h1>@Lists</h1>
-
-    <h2>Block unordered list</h2>
-    <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-    </ul>
-
-    <h2>Inline unordered list</h2>
-    <ul>
-        <li class="list-non-bullet">Inline Item One</li>
-        <li class="list-non-bullet">Inline Item two</li>
-        <li class="list-non-bullet">Inline Item Three</li>
-    </ul>
-
-    <h2>Ordered List</h2>
-    <ol reversed>
-         <li class="navLInk">Milk</li>
-         <li class="navLInk">Eggs</li>
-         <li class="navLInk">Bread</li>
-    </ol>
-
-    <hr>
-
-    <h1>@Nav</h1>
-    
-    <nav class="navigation container">
-        <div class="navBrand">IamBrand</div>
-
-        <ul class="nav-pills">
-            <li class="list-non-bullet">
-                <a class="link link-active" href="">Home</a>
-            </li>
-            <li class="list-non-bullet">
-                <a class="link" href="">Projects</a>
-            </li>
-            <li class="list-non-bullet">
-                <a class="link" href="">Contact Us</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    <hr>
-
-
-    <header>
-        <h1>@Header</h1>
-
-        <img src="/images/sahasra.jpeg" alt="">
-        <h1>Heading Inside Hero</h1>
+        <div class="hero-content container">
+            <div class="hero-copy-block">
+                <p class="eyebrow">Premium Construction & Interiors Across India</p>
+                <h1>Build elegant, functional spaces with a team you can trust.</h1>
+                <p class="hero-copy">We deliver end-to-end construction, interiors, 3D planning, and renovation services with clean execution, transparent timelines, and premium craftsmanship.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+                    <a href="#gallery" class="btn btn-glass">Explore Projects</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>300+</strong><span>Projects Completed</span></div>
+                    <div><strong>18</strong><span>Cities Served</span></div>
+                    <div><strong>4.9★</strong><span>Client Rating</span></div>
+                </div>
+            </div>
+            <article class="hero-card">
+                <h3>Why BuildCraft?</h3>
+                <ul>
+                    <li>Dedicated project manager for every site</li>
+                    <li>Weekly progress updates with milestone tracking</li>
+                    <li>Premium materials with quality assurance checks</li>
+                    <li>Design-first approach with practical execution</li>
+                </ul>
+            </article>
+        </div>
     </header>
 
-    <hr>
+    <main>
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Our Services</h2>
+                    <p class="section-intro">Select a service to jump to the gallery and view related work.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="card service-card">
+                        <p class="service-icon">🏗️</p>
+                        <h3>Construction</h3>
+                        <p>From planning to handover, we manage structural work, civil execution, and site coordination.</p>
+                        <a href="#gallery" class="btn btn-secondary service-btn" data-service="construction">View Construction Gallery</a>
+                    </article>
+                    <article class="card service-card">
+                        <p class="service-icon">🛋️</p>
+                        <h3>Interiors</h3>
+                        <p>Modern interiors crafted for comfort, aesthetics, and smarter use of every square foot.</p>
+                        <a href="#gallery" class="btn btn-secondary service-btn" data-service="interiors">View Interiors Gallery</a>
+                    </article>
+                    <article class="card service-card">
+                        <p class="service-icon">📐</p>
+                        <h3>3D Plan</h3>
+                        <p>Photoreal 3D layouts and walkthroughs that help you decide confidently before execution.</p>
+                        <a href="#gallery" class="btn btn-secondary service-btn" data-service="3d-plan">View 3D Plan Gallery</a>
+                    </article>
+                    <article class="card service-card">
+                        <p class="service-icon">🔨</p>
+                        <h3>Renovation</h3>
+                        <p>Transform old properties with modern finishes, better layouts, and lasting quality upgrades.</p>
+                        <a href="#gallery" class="btn btn-secondary service-btn" data-service="renovation">View Renovation Gallery</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <h1>@Section</h1>
+        <section class="section section-soft" id="gallery">
+            <div class="container">
+                <div class="section-title-row">
+                    <h2>Project Gallery</h2>
+                    <button class="btn btn-glass" id="show-all" type="button">Show All</button>
+                </div>
+                <p class="section-intro">Real project snapshots across categories.</p>
+                <div class="gallery-grid">
+                    <figure class="gallery-item" data-service="construction">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="High-rise construction project" loading="lazy">
+                        <figcaption>Construction</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="construction">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Construction workers on site" loading="lazy">
+                        <figcaption>Construction</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="interiors">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" alt="Modern living room interior" loading="lazy">
+                        <figcaption>Interiors</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="interiors">
+                        <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=80" alt="Stylish dining interior" loading="lazy">
+                        <figcaption>Interiors</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="3d-plan">
+                        <img src="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&fit=crop&w=1200&q=80" alt="Architectural 3D model" loading="lazy">
+                        <figcaption>3D Plan</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="3d-plan">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="Architect reviewing plans" loading="lazy">
+                        <figcaption>3D Plan</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="renovation">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80" alt="Kitchen renovation" loading="lazy">
+                        <figcaption>Renovation</figcaption>
+                    </figure>
+                    <figure class="gallery-item" data-service="renovation">
+                        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80" alt="Renovated home exterior" loading="lazy">
+                        <figcaption>Renovation</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h3>White Section</h3>
-        <p>THis is a white section </p>
-    </section>
+        <section class="section" id="pricing">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Pricing Plans</h2>
+                    <p class="section-intro">Simple, transparent packages for different project sizes.</p>
+                </div>
+                <div class="pricing-grid">
+                    <article class="card pricing-card">
+                        <h3>Essential</h3>
+                        <p class="price">₹4.5L <span>/project</span></p>
+                        <ul>
+                            <li>Construction consultation</li>
+                            <li>Monthly site supervision</li>
+                            <li>Material planning support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Choose Essential</a>
+                    </article>
+                    <article class="card pricing-card featured">
+                        <p class="tag">Most Popular</p>
+                        <h3>Professional</h3>
+                        <p class="price">₹12L <span>/project</span></p>
+                        <ul>
+                            <li>Turnkey project execution</li>
+                            <li>Premium interior package</li>
+                            <li>3D design + walkthrough</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Choose Professional</a>
+                    </article>
+                    <article class="card pricing-card">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom <span>/quote</span></p>
+                        <ul>
+                            <li>Large-scale development</li>
+                            <li>Dedicated execution team</li>
+                            <li>Priority support & governance</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary">Request Quote</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h3>Off-White Section</h3>
-        <p>Tis is an off-white section </p>
-    </section>
+        <section class="section section-soft" id="testimonials">
+            <div class="container">
+                <div class="section-head">
+                    <h2>What Clients Say</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <blockquote class="card testimonial-card">
+                        “BuildCraft transformed our home beautifully. The team was punctual, clean, and clear throughout execution.”
+                        <cite>— Anjali Sharma, Bengaluru</cite>
+                    </blockquote>
+                    <blockquote class="card testimonial-card">
+                        “Great technical planning and smooth handover. Their 3D plan exactly matched the final result.”
+                        <cite>— Rohan Mehta, Pune</cite>
+                    </blockquote>
+                    <blockquote class="card testimonial-card">
+                        “Our office renovation was finished before deadline and with premium detailing. Excellent experience.”
+                        <cite>— Priya Nair, Kochi</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Contact Us</h2>
+                    <p class="section-intro">Share your project details and our team will connect with you within 24 hours.</p>
+                </div>
+                <div class="contact-grid">
+                    <form class="card contact-form" action="#" method="post">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-    <footer>
-        <div>Some small line</div>
-        <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>LinedIn</li>
-        </ul>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91" required>
+
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="construction">Construction</option>
+                            <option value="interiors">Interiors</option>
+                            <option value="3d-plan">3D Plan</option>
+                            <option value="renovation">Renovation</option>
+                        </select>
+
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us your requirements"></textarea>
+
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                    <article class="card map-card">
+                        <h3>Our Location</h3>
+                        <p>BuildCraft India, MG Road, Bengaluru, Karnataka</p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Karnataka_in_India_%28claimed_and_recognized_hatched%29.svg/1280px-Karnataka_in_India_%28claimed_and_recognized_hatched%29.svg.png" alt="Map display showing Karnataka, India" loading="lazy">
+                        <a href="https://maps.google.com/?q=MG+Road+Bengaluru" target="_blank" rel="noopener noreferrer">Open location in Google Maps</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft" id="videos">
+            <div class="container">
+                <div class="section-head">
+                    <h2>From Our YouTube Channel</h2>
+                    <p class="section-intro">Watch site updates, design ideas, and transformation stories.</p>
+                </div>
+                <div class="video-grid">
+                    <a class="video-card" href="https://www.youtube.com/watch?v=jfKfPfyJRdk" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/jfKfPfyJRdk/hqdefault.jpg" alt="Construction process video" loading="lazy">
+                        <span>Construction Project Process</span>
+                    </a>
+                    <a class="video-card" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="Interior walkthrough video" loading="lazy">
+                        <span>Interior Design Walkthrough</span>
+                    </a>
+                    <a class="video-card" href="https://www.youtube.com/watch?v=ysz5S6PUM-U" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Renovation tips video" loading="lazy">
+                        <span>Renovation Tips & Showcase</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 BuildCraft India. Crafted with trust, quality and innovation.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </footer>
 
+    <script>
+        const serviceButtons = document.querySelectorAll('.service-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const showAllBtn = document.getElementById('show-all');
 
+        function filterGallery(service) {
+            galleryItems.forEach((item) => {
+                item.style.display = item.dataset.service === service ? 'block' : 'none';
+            });
+        }
 
-    
+        serviceButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                filterGallery(button.dataset.service);
+            });
+        });
+
+        showAllBtn.addEventListener('click', () => {
+            galleryItems.forEach((item) => {
+                item.style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
